@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusixSync", "MusixSync\MusixSync.csproj", "{6D383A9A-CB56-47F1-A1B3-6C5D47CFEEA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusixSync.Mobile.Android", "MusixSync.Mobile\MusixSync.Mobile.Android\MusixSync.Mobile.Android.csproj", "{04C5A34D-0190-4D0B-ADF5-214AD4ECE803}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusixSync.Mobile", "MusixSync.Mobile\MusixSync.Mobile\MusixSync.Mobile.csproj", "{716B7E1D-C027-494E-8A83-C12A504897BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusixSync.Networking", "MusixSync.Networking\MusixSync.Networking.csproj", "{439ADC3B-FADD-42B2-8559-3C3F979EC5EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D383A9A-CB56-47F1-A1B3-6C5D47CFEEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D383A9A-CB56-47F1-A1B3-6C5D47CFEEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D383A9A-CB56-47F1-A1B3-6C5D47CFEEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D383A9A-CB56-47F1-A1B3-6C5D47CFEEA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04C5A34D-0190-4D0B-ADF5-214AD4ECE803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C5A34D-0190-4D0B-ADF5-214AD4ECE803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C5A34D-0190-4D0B-ADF5-214AD4ECE803}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{04C5A34D-0190-4D0B-ADF5-214AD4ECE803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C5A34D-0190-4D0B-ADF5-214AD4ECE803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04C5A34D-0190-4D0B-ADF5-214AD4ECE803}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{716B7E1D-C027-494E-8A83-C12A504897BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716B7E1D-C027-494E-8A83-C12A504897BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716B7E1D-C027-494E-8A83-C12A504897BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716B7E1D-C027-494E-8A83-C12A504897BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{439ADC3B-FADD-42B2-8559-3C3F979EC5EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{439ADC3B-FADD-42B2-8559-3C3F979EC5EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{439ADC3B-FADD-42B2-8559-3C3F979EC5EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{439ADC3B-FADD-42B2-8559-3C3F979EC5EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2BF7A3F-035E-4762-9277-4C6694A0F36A}
+	EndGlobalSection
+EndGlobal

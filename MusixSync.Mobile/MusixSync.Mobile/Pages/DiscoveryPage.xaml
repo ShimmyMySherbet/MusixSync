@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MusixSync.Mobile.Pages.DiscoveryPage"
+             BackgroundColor="#2C2F33">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+                    <Label Text="Scanning for devices..." FontSize="Large" HorizontalOptions="Center" TextColor="#7289DA"/>
+                    <Label Text="Available Devices:" FontSize="Medium" HorizontalOptions="Center" TextColor="#7289DA"/>
+                <Button x:Name="btnTmp" Text="tmp" IsVisible="False"/>
+            </StackLayout>
+
+            <BoxView BackgroundColor="#7289DA" Margin="8, 68, 8, 8"/>
+            <Grid BackgroundColor="#282B2F" Margin="10, 70, 10, 10">
+                
+                <StackLayout x:Name="StackMain" BackgroundColor="#282B2F"/>
+
+
+            </Grid>
+            
+            
+            <Label Text="No Devices Found (yet)..."
+                   TextColor="AliceBlue"
+                   Margin="0, 250, 0, 0"
+                   FontSize="Medium" 
+                   HorizontalOptions="Center"
+                   x:Name="lblNoneFound"
+                   IsVisible="False"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MusixSync.Mobile.Pages.SyncPage">
+    <ContentPage.Content>
+        <Grid
+            BackgroundColor="#2C2F33">
+            <StackLayout>
+                <Label Text="Syncing With: DEVICE_NAME" HorizontalOptions="Center" FontSize="Large" TextColor="#7289DA" x:Name="lblTitle"/>
+                <Label Text="Starting Sync..." HorizontalOptions="Center" FontSize="Medium" TextColor="#7289DA" x:Name="lblStatus"/>
+                <BoxView HeightRequest="100"/>
+                <Label Text="Auto-Sync with this device" HorizontalOptions="Center" TextColor="#7289DA" FontSize="Medium"/>
+                <CheckBox HorizontalOptions="Center" x:Name="cbAutoSync"/>
+            </StackLayout>
+
+           
+            <ProgressBar Progress="0" VerticalOptions="End" x:Name="pbProg" Margin="10, 10, 10, 55"/>
+            <Button x:Name="btnCancel" Text="Cancel" VerticalOptions="End" TextColor="#7289DA" BackgroundColor="#111111"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

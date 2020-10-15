@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:MusixSync"
+             x:Class="MusixSync.Mobile.MainPage">
+
+    <StackLayout x:Name="stackmain"
+                 BackgroundColor="#2C2F33">
+        <Label Text="Musix Sync"
+               HorizontalOptions="Center"
+               TextColor="#7289DA"
+               FontSize="Large" />
+
+        <Grid BackgroundColor="#282B2F"
+              HorizontalOptions="Center"
+              Margin="15"
+              VerticalOptions="Center"
+              Padding="10">
+
+            <Label Text="Scan For Host"
+                   FontSize="Medium"
+                   HorizontalOptions="Center"
+                   TextColor="#7289DA"/>
+            <Button Text="Scan"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="30"
+                    x:Name="btnStart"
+                    TextColor="#7289DA" 
+                    BackgroundColor="#2B2E32"
+                    BorderColor="#7289DA"
+                    BorderWidth="1"/>
+
+        </Grid>
+        <BoxView HeightRequest="10"/>
+        <StackLayout BackgroundColor="#282B2F"
+                     Margin="15"
+                     Padding="10">
+            <Label Text="Auto-Sync"  HorizontalOptions="Center"
+                   TextColor="#7289DA" FontSize="Medium"/>
+            <CheckBox HorizontalOptions="Center" x:Name="cbAutoSync"/>
+
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
