@@ -79,18 +79,31 @@ namespace MusixSync.Networking
             {
                 if (CachedHostname == null)
                 {
-                    IPHostEntry h = Dns.GetHostEntry(Address);
-                    if (h != null)
+                    if (TryGetHostEntry(Address, out IPHostEntry entry))
                     {
-                        CachedHostname = h.HostName;
-                    }
-                    else
+                        CachedHostname = entry.HostName;
+
+                    } else
                     {
                         CachedHostname = "Unknown Device";
                     }
                 }
                 return CachedHostname;
             }
+        }
+
+        public bool TryGetHostEntry(IPAddress address, out IPHostEntry entry)
+        {
+            try
+            {
+                entry = Dns.GetHostEntry(address);
+                return true;
+            }
+            catch (Exception)
+            {
+                entry = null;
+            }
+            return false;
         }
 
         private void SyncHost_SyncAborted(SyncAbortReason Reason, string Message)
