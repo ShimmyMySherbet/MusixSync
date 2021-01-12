@@ -104,7 +104,6 @@ namespace MusixSync.Networking
             if (_IsDiscoveryActive)
             {
                 GC.Collect();
-                Thread.Sleep(2000);
 
                 for (int i = 0; i < 15; i++)
                 {
@@ -120,6 +119,7 @@ namespace MusixSync.Networking
 
                     Thread.Sleep(1000);
                 }
+                Thread.Sleep(2000);
 
                 if (_IsDiscoveryActive)
                 {

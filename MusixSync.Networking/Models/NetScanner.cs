@@ -4,8 +4,6 @@ using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MusixSync.Networking.Models
 {
@@ -47,9 +45,11 @@ namespace MusixSync.Networking.Models
                         prov.CallbackRef.Max++;
                     }
                     string ip = IPPrefix + i.ToString();
-                    Ping p = new Ping();
-                    p.PingCompleted += new PingCompletedEventHandler(prov.PingCompleted);
-                    p.SendAsync(ip, 100, ip);
+                    using (Ping p = new Ping())
+                    {
+                        p.PingCompleted += new PingCompletedEventHandler(prov.PingCompleted);
+                        p.SendAsync(ip, 300, ip);
+                    }
                 }
                 lock (prov.CallbackRef)
                 {
